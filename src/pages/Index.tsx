@@ -7,7 +7,6 @@ import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
-import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -24,11 +23,10 @@ const Index = () => {
       </div>
       <Process />
       <div id="testimonials">
-        <Testimonials />
+      <Testimonials />
       </div>
       <FAQ />
       <Pricing />
-      <FinalCTA />
       <Footer />
     </div>
   );

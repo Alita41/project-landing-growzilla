@@ -39,9 +39,17 @@ const Footer = () => {
               />
               <h3 className="text-2xl font-bold">GrowZilla</h3>
             </div>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground mb-6">
               AI-powered lead generation that fills your calendar with qualified B2B meetings.
             </p>
+            <Button 
+              size="lg" 
+              variant="cta"
+              onClick={() => window.open(CALENDAR_LINK, '_blank')}
+              className="mb-6"
+            >
+              Book a Call
+            </Button>
             <div className="flex gap-4">
               <a 
                 href="https://linkedin.com" 

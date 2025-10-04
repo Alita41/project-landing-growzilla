@@ -62,7 +62,7 @@ const Pricing = () => {
           {packages.map((pkg, index) => (
             <Card 
               key={index} 
-              className={pkg.featured ? "border-primary border-2 shadow-xl relative" : "shadow-sm"}
+              className={pkg.featured ? "border-primary border-2 shadow-xl relative flex flex-col" : "shadow-sm flex flex-col"}
             >
               {pkg.featured && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
@@ -73,12 +73,12 @@ const Pricing = () => {
                 <CardTitle className="text-2xl">{pkg.name}</CardTitle>
                 <CardDescription className="text-base">{pkg.description}</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-6 flex flex-col flex-grow">
                 <div className="bg-secondary/50 p-4 rounded-lg">
                   <p className="text-sm font-medium mb-1">✅ Ideal for:</p>
                   <p className="text-sm text-muted-foreground">{pkg.ideal}</p>
                 </div>
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-6 flex-grow">
                   {pkg.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -87,12 +87,12 @@ const Pricing = () => {
                   ))}
                 </ul>
                 <Button 
-                  className="w-full" 
+                  className="w-full mt-auto" 
                   variant={pkg.featured ? "cta" : "default"}
                   size="lg"
                   onClick={() => window.open(CALENDAR_LINK, '_blank')}
                 >
-                  {pkg.featured ? "Book a Meeting" : "Contact Sales"}
+                  Book a Meeting
                 </Button>
               </CardContent>
             </Card>

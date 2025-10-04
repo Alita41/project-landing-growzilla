@@ -4,21 +4,17 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import growzillaLogo from "@/assets/growzilla-logo.png";
 import mnVenturesLogo from "@/assets/mn-ventures-logo.png";
 import growthGuildLogo from "@/assets/growth-guild-logo.png";
 
 const clients = [
-  { name: "TrafficWave", logo: growzillaLogo },
-  { name: "MN Ventures", logo: mnVenturesLogo },
-  { name: "Growth Guild", logo: growthGuildLogo },
-  { name: "Reflexion", logo: growzillaLogo },
-  { name: "Win Academy", logo: mnVenturesLogo },
-  { name: "Gray Dots", logo: growthGuildLogo },
-  { name: "30Second Group", logo: growzillaLogo },
-  { name: "LeadHive", logo: mnVenturesLogo },
-  { name: "BrightPath", logo: growthGuildLogo },
-  { name: "Nexel", logo: growzillaLogo },
+  { name: "MN Ventures", logo: mnVenturesLogo, color: "#3B82F6" },
+  { name: "Growth Guild", logo: growthGuildLogo, color: "#10B981" },
+  { name: "TrafficWave", logo: "https://via.placeholder.com/150x60/8B5CF6/FFFFFF?text=TrafficWave", color: "#8B5CF6" },
+  { name: "Reflexion", logo: "https://via.placeholder.com/150x60/F59E0B/FFFFFF?text=Reflexion", color: "#F59E0B" },
+  { name: "BrightPath", logo: "https://via.placeholder.com/150x60/EC4899/FFFFFF?text=BrightPath", color: "#EC4899" },
+  { name: "LeadHive", logo: "https://via.placeholder.com/150x60/06B6D4/FFFFFF?text=LeadHive", color: "#06B6D4" },
+  { name: "Nexel", logo: "https://via.placeholder.com/150x60/14B8A6/FFFFFF?text=Nexel", color: "#14B8A6" },
 ];
 
 const SocialProof = () => {
@@ -33,22 +29,26 @@ const SocialProof = () => {
             opts={{
               align: "start",
               loop: true,
+              dragFree: true,
             }}
             plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 0,
+                stopOnInteraction: false,
+                stopOnMouseEnter: false,
+                playOnInit: true,
               }),
             ]}
             className="w-full max-w-5xl mx-auto"
           >
-            <CarouselContent>
-              {clients.map((client) => (
-                <CarouselItem key={client.name} className="md:basis-1/3 lg:basis-1/5">
-                  <div className="flex items-center justify-center p-6 rounded-lg bg-background hover:bg-background/80 transition-all hover:shadow-lg h-24">
+            <CarouselContent className="-ml-4 flex transition-transform ease-linear duration-[3000ms]">
+              {[...clients, ...clients].map((client, index) => (
+                <CarouselItem key={`${client.name}-${index}`} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="flex items-center justify-center p-6 rounded-lg bg-background hover:bg-background/80 transition-all hover:shadow-lg h-24 border border-border/50">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition-all"
+                      className="max-h-12 max-w-full object-contain transition-all hover:scale-110"
                     />
                   </div>
                 </CarouselItem>
