@@ -2,7 +2,7 @@ import { X, CheckCircle2, TrendingDown, TrendingUp } from "lucide-react";
 
 const Problem = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-secondary/30 via-background to-secondary/20 relative overflow-hidden">
+    <section className="py-12 bg-gradient-to-b from-secondary/30 via-background to-secondary/20 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-destructive rounded-full blur-3xl animate-pulse"></div>
@@ -13,7 +13,7 @@ const Problem = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <div className="inline-block animate-fade-in">
-              <span className="text-sm font-semibold text-primary uppercase tracking-wider">The Problem</span>
+              <span className="text-lg md:text-xl font-semibold text-primary uppercase tracking-wider">The Problem</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
               Tired of Cold Outreach That <span className="text-destructive">Never Converts?</span>

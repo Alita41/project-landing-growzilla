@@ -6,20 +6,25 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import mnVenturesLogo from "@/assets/mn-ventures-logo.png";
 import growthGuildLogo from "@/assets/growth-guild-logo.png";
+import clientLogo1 from "@/assets/client-logo-1.png";
+import clientLogo2 from "@/assets/client-logo-2.png";
+import clientLogo3 from "@/assets/client-logo-3.png";
+import clientLogo4 from "@/assets/client-logo-4.png";
+import clientLogo5 from "@/assets/client-logo-5.png";
 
 const clients = [
-  { name: "MN Ventures", logo: mnVenturesLogo, color: "#3B82F6" },
-  { name: "Growth Guild", logo: growthGuildLogo, color: "#10B981" },
-  { name: "TrafficWave", logo: "https://via.placeholder.com/150x60/8B5CF6/FFFFFF?text=TrafficWave", color: "#8B5CF6" },
-  { name: "Reflexion", logo: "https://via.placeholder.com/150x60/F59E0B/FFFFFF?text=Reflexion", color: "#F59E0B" },
-  { name: "BrightPath", logo: "https://via.placeholder.com/150x60/EC4899/FFFFFF?text=BrightPath", color: "#EC4899" },
-  { name: "LeadHive", logo: "https://via.placeholder.com/150x60/06B6D4/FFFFFF?text=LeadHive", color: "#06B6D4" },
-  { name: "Nexel", logo: "https://via.placeholder.com/150x60/14B8A6/FFFFFF?text=Nexel", color: "#14B8A6" },
+  { name: "MN Ventures", logo: mnVenturesLogo },
+  { name: "Growth Guild", logo: growthGuildLogo },
+  { name: "Client 1", logo: clientLogo1 },
+  { name: "Client 2", logo: clientLogo2 },
+  { name: "Client 3", logo: clientLogo3 },
+  { name: "Client 4", logo: clientLogo4 },
+  { name: "Client 5", logo: clientLogo5 },
 ];
 
 const SocialProof = () => {
   return (
-    <section className="py-16 bg-secondary/50">
+    <section className="py-12 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-8">
           <h2 className="text-2xl md:text-3xl font-bold">
@@ -33,7 +38,7 @@ const SocialProof = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 3000,
+                delay: 2000,
                 stopOnInteraction: false,
                 stopOnMouseEnter: false,
                 playOnInit: true,
