@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
@@ -76,6 +77,12 @@ const Testimonials = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+                stopOnInteraction: false,
+              }),
+            ]}
             className="w-full"
           >
             <CarouselContent>

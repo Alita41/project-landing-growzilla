@@ -78,7 +78,7 @@ const Pricing = () => {
                   <p className="text-sm font-medium mb-1">✅ Ideal for:</p>
                   <p className="text-sm text-muted-foreground">{pkg.ideal}</p>
                 </div>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   {pkg.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -86,18 +86,17 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
+                <Button 
+                  className="w-full" 
+                  variant={pkg.featured ? "cta" : "default"}
+                  size="lg"
+                  onClick={() => window.open(CALENDAR_LINK, '_blank')}
+                >
+                  {pkg.featured ? "Book a Meeting" : "Contact Sales"}
+                </Button>
               </CardContent>
             </Card>
           ))}
-        </div>
-        <div className="text-center">
-          <Button 
-            size="xl" 
-            variant="cta"
-            onClick={() => window.open(CALENDAR_LINK, '_blank')}
-          >
-            Book a Meeting to Learn More — We'll Tailor a Plan for You
-          </Button>
         </div>
       </div>
     </section>
