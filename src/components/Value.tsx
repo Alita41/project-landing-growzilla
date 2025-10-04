@@ -1,4 +1,4 @@
-import { Target, Bot, TrendingUp, Clock, Shield } from "lucide-react";
+import { Target, Bot, TrendingUp, Clock, Shield, Zap } from "lucide-react";
 
 const benefits = [
   {
@@ -25,6 +25,11 @@ const benefits = [
     icon: Shield,
     title: "Guaranteed Results",
     description: "If we don't deliver at least 5 meetings in a month, you don't pay.",
+  },
+  {
+    icon: Zap,
+    title: "Fast Implementation",
+    description: "Get started in just 3-5 days with campaigns live and generating meetings within the first week.",
   },
 ];
 

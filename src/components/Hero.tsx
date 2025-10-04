@@ -6,7 +6,7 @@ const CALENDAR_LINK = "https://calendly.com/growzilla";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background to-secondary/30 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-background to-secondary/30 pt-32 pb-20 md:pt-40 md:pb-32">
       <div className="container mx-auto px-4">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-8">

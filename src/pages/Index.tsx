@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
 import Problem from "@/components/Problem";
@@ -12,12 +13,19 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
+      <Navbar />
+      <div id="home">
+        <Hero />
+      </div>
       <SocialProof />
       <Problem />
-      <Value />
+      <div id="features">
+        <Value />
+      </div>
       <Process />
-      <Testimonials />
+      <div id="testimonials">
+        <Testimonials />
+      </div>
       <FAQ />
       <Pricing />
       <FinalCTA />
