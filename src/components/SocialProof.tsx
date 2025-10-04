@@ -33,7 +33,7 @@ const SocialProof = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 0,
+                delay: 3000,
                 stopOnInteraction: false,
                 stopOnMouseEnter: false,
                 playOnInit: true,
@@ -41,7 +41,7 @@ const SocialProof = () => {
             ]}
             className="w-full max-w-5xl mx-auto"
           >
-            <CarouselContent className="-ml-4 flex transition-transform ease-linear duration-[3000ms]">
+            <CarouselContent className="-ml-4 flex">
               {[...clients, ...clients].map((client, index) => (
                 <CarouselItem key={`${client.name}-${index}`} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <div className="flex items-center justify-center p-6 rounded-lg bg-background hover:bg-background/80 transition-all hover:shadow-lg h-24 border border-border/50">

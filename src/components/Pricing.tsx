@@ -46,7 +46,7 @@ const packages = [
 const Pricing = () => {
   return (
     <section className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Tailored Plans for Every Growth Stage
@@ -62,7 +62,9 @@ const Pricing = () => {
           {packages.map((pkg, index) => (
             <Card 
               key={index} 
-              className={pkg.featured ? "border-primary border-2 shadow-xl relative flex flex-col" : "shadow-sm flex flex-col"}
+              className={pkg.featured 
+                ? "border-primary border-2 shadow-xl relative flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20" 
+                : "shadow-sm flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/50"}
             >
               {pkg.featured && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
