@@ -2,7 +2,7 @@ import { Linkedin, Twitter, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import growzillaLogo from "@/assets/growzilla-logo.png";
 
-const CALENDAR_LINK = "https://calendly.com/growzilla";
+const CALENDAR_LINK = "https://api.leadconnectorhq.com/widget/bookings/growzilla";
 
 const Footer = () => {
   return (

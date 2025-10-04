@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
-const CALENDAR_LINK = "https://calendly.com/growzilla";
+const CALENDAR_LINK = "https://api.leadconnectorhq.com/widget/bookings/growzilla";
 
 const packages = [
   {
@@ -46,15 +46,15 @@ const packages = [
 const Pricing = () => {
   return (
     <section className="py-14 bg-secondary/30">
-      <div className="container mx-auto px-6 md:px-12 lg:px-16">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Tailored Plans for Every Growth Stage
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Whether you need simple campaigns or a fully autonomous sales system — GrowZilla has a tailored solution to fit your goals and budget.
           </p>
-          <p className="text-sm text-muted-foreground mt-4">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-4">
             Flexible, results-driven packages starting at $1,200/month, scaling up to $5,000/month depending on campaign complexity.
           </p>
         </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import growzillaLogo from "@/assets/growzilla-logo.png";
 
-const CALENDAR_LINK = "https://calendly.com/growzilla";
+const CALENDAR_LINK = "https://api.leadconnectorhq.com/widget/bookings/growzilla";
 
 const Navbar = () => {
   const scrollToSection = (id: string) => {
@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl">
-      <div className="bg-background/95 backdrop-blur-md border border-border rounded-full shadow-lg px-6">
-        <div className="flex items-center justify-between h-16">
+    <nav className="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl">
+      <div className="bg-background/95 backdrop-blur-md border border-border rounded-full shadow-lg px-4 sm:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           <div 
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => scrollToSection('home')}
@@ -22,12 +22,12 @@ const Navbar = () => {
             <img 
               src={growzillaLogo} 
               alt="GrowZilla Logo" 
-              className="h-8 w-auto"
+              className="h-6 sm:h-8 w-auto"
             />
-            <span className="text-xl font-bold">GrowZilla</span>
+            <span className="text-lg sm:text-xl font-bold">GrowZilla</span>
           </div>
           
-          <div className="flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('home')}
               className="text-foreground hover:text-primary transition-colors font-medium"
@@ -49,6 +49,17 @@ const Navbar = () => {
             <Button 
               variant="cta"
               size="default"
+              onClick={() => window.open(CALENDAR_LINK, '_blank')}
+            >
+              Book a Meeting
+            </Button>
+          </div>
+          
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <Button 
+              variant="cta"
+              size="sm"
               onClick={() => window.open(CALENDAR_LINK, '_blank')}
             >
               Book a Meeting

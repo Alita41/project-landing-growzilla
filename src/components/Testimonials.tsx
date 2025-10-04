@@ -65,9 +65,9 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-14 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Real Results from Real Founders
           </h2>
         </div>
@@ -87,20 +87,20 @@ const Testimonials = () => {
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="sm:basis-full md:basis-1/2 lg:basis-1/3">
                   <Card className="h-full">
-                    <CardContent className="p-6 space-y-4">
+                    <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4">
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                          <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-primary text-primary" />
                         ))}
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                         "{testimonial.quote}"
                       </p>
-                      <div className="pt-4 border-t">
-                        <p className="font-semibold">{testimonial.author}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                      <div className="pt-3 sm:pt-4 border-t">
+                        <p className="text-sm sm:text-base font-semibold">{testimonial.author}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.title}</p>
                       </div>
                     </CardContent>
                   </Card>

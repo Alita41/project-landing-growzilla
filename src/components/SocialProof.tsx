@@ -25,9 +25,9 @@ const clients = [
 const SocialProof = () => {
   return (
     <section className="py-12 bg-secondary/50">
-      <div className="container mx-auto px-4">
-        <div className="text-center space-y-8">
-          <h2 className="text-2xl md:text-3xl font-bold">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
+        <div className="text-center space-y-6 sm:space-y-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">
             Trusted by Fast-Growing Digital Companies
           </h2>
           <Carousel
@@ -49,18 +49,18 @@ const SocialProof = () => {
             <CarouselContent className="-ml-4 flex">
               {[...clients, ...clients].map((client, index) => (
                 <CarouselItem key={`${client.name}-${index}`} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <div className="flex items-center justify-center p-6 rounded-lg bg-background hover:bg-background/80 transition-all hover:shadow-lg h-24 border border-border/50">
+                  <div className="flex items-center justify-center p-4 sm:p-6 rounded-lg bg-background hover:bg-background/80 transition-all hover:shadow-lg h-20 sm:h-24 border border-border/50">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-12 max-w-full object-contain transition-all hover:scale-110"
+                      className="max-h-10 sm:max-h-12 max-w-full object-contain transition-all hover:scale-110"
                     />
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
           </Carousel>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-xs sm:text-sm">
             Rated 5★ for reliability and performance by top B2B founders.
           </p>
         </div>

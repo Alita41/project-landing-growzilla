@@ -1,73 +1,151 @@
-# Welcome to your Lovable project
+# GrowZilla - AI-Powered B2B Lead Generation
 
-## Project info
+## 🚀 Project Pitch
 
-**URL**: https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb
+GrowZilla is a cutting-edge B2B lead generation platform that helps service agencies and digital companies consistently fill their sales calendars with 20+ qualified meetings every month. Through fully automated lead generation systems powered by AI and expert strategy, we transform cold outreach into predictable revenue engines.
 
-## How can I edit this code?
+Our platform eliminates the pain of inconsistent pipelines and wasted effort on prospects who never convert, replacing manual, time-consuming outreach with intelligent, automated systems that deliver results.
 
-There are several ways of editing your application.
+## 🔗 Live Deployment
 
-**Use Lovable**
+**Production URL:** [https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb](https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb) and start prompting.
+## 💻 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- **React 18.3.1** - Modern UI library for building interactive interfaces
+- **TypeScript** - Type-safe JavaScript for robust code
+- **Vite** - Lightning-fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework for custom designs
+- **shadcn/ui** - High-quality, accessible component library
 
-**Use your preferred IDE**
+### UI Components & Libraries
+- **Radix UI** - Unstyled, accessible component primitives
+- **Lucide React** - Beautiful, consistent icon library
+- **Embla Carousel** - Smooth, customizable carousel component
+- **React Hook Form** - Performant form validation
+- **Sonner** - Beautiful toast notifications
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Routing & State
+- **React Router DOM 6.30.1** - Client-side routing
+- **TanStack Query 5.83.0** - Powerful data fetching and caching
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Styling & Animation
+- **tailwindcss-animate** - Pre-built animation utilities
+- **class-variance-authority** - Type-safe component variants
+- **clsx & tailwind-merge** - Efficient className handling
 
-Follow these steps:
+## 📁 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui component library
+│   ├── Hero.tsx        # Landing page hero section
+│   ├── Navbar.tsx      # Navigation bar
+│   ├── Problem.tsx     # Problem statement section
+│   ├── Value.tsx       # Value proposition
+│   ├── Process.tsx     # Process explanation
+│   ├── Testimonials.tsx # Client testimonials
+│   ├── Pricing.tsx     # Pricing plans
+│   ├── FAQ.tsx         # Frequently asked questions
+│   ├── SocialProof.tsx # Client logos carousel
+│   └── Footer.tsx      # Footer with CTA
+├── pages/              # Page components
+│   ├── Index.tsx       # Main landing page
+│   └── NotFound.tsx    # 404 page
+├── hooks/              # Custom React hooks
+├── assets/             # Images and static files
+├── lib/                # Utility functions
+├── index.css           # Global styles & design tokens
+└── main.tsx           # Application entry point
+```
+
+## 🎨 Design System
+
+GrowZilla features a comprehensive design system built on semantic tokens:
+- **HSL Color Palette** - Flexible, theme-ready colors
+- **Responsive Typography** - Mobile-first text scaling
+- **Animation Library** - Smooth transitions and micro-interactions
+- **Component Variants** - Consistent UI patterns across the app
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ (install via [nvm](https://github.com/nvm-sh/nvm))
+- npm or yarn package manager
+
+### Installation
+
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd project-landing-growzilla
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Deployment
 
-## What technologies are used for this project?
+This project is deployed on [Lovable](https://lovable.dev) with automatic deployments on every commit to the main branch.
 
-This project is built with:
+To deploy manually:
+1. Visit the [Lovable Project Dashboard](https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb)
+2. Click **Share → Publish**
+3. Your changes will be live instantly
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔌 Custom Domain
 
-## How can I deploy this project?
+To connect a custom domain:
+1. Navigate to **Project > Settings > Domains**
+2. Click **Connect Domain**
+3. Follow the DNS configuration instructions
 
-Simply open [Lovable](https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb) and click on Share -> Publish.
+Learn more: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain)
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contributing
 
-Yes, you can!
+1. Create a feature branch (`git checkout -b feat/amazing-feature`)
+2. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+3. Push to the branch (`git push origin feat/amazing-feature`)
+4. Open a Pull Request
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Commit Convention
+- `feat:` New features
+- `fix:` Bug fixes
+- `docs:` Documentation updates
+- `style:` Code style changes (formatting, etc.)
+- `refactor:` Code refactoring
+- `test:` Adding or updating tests
+- `chore:` Maintenance tasks
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📄 License
+
+This project is built with [Lovable](https://lovable.dev) and is part of the GrowZilla platform.
+
+## 🔗 Links
+
+- [Lovable Documentation](https://docs.lovable.dev/)
+- [Lovable Community Discord](https://discord.com/channels/1119885301872070706/1280461670979993613)
+- [Book a Meeting](https://api.leadconnectorhq.com/widget/bookings/growzilla)
+
+---
+
+Built with ❤️ by GrowZilla - Transforming outreach into predictable revenue.
