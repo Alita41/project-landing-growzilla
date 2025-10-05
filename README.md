@@ -8,7 +8,7 @@ Our platform eliminates the pain of inconsistent pipelines and wasted effort on 
 
 ## 🔗 Live Deployment
 
-**Production URL:** [https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb](https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb)
+**Production URL:** [[https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb](https://lovable.dev/projects/36600647-d97d-4003-b9cb-bd500bfbbadb)](https://growzilla-ai.netlify.app/)
 
 ## 💻 Tech Stack
 
